@@ -379,12 +379,27 @@ sup.fr{color:var(--cyan);font-size:.72em;vertical-align:super;margin-left:2px}
 .qx-i .qx-e{font-size:14.5px;line-height:1.5;font-weight:300;color:var(--dim);margin:0;padding-left:14px;border-left:2px solid var(--line2)}
 .slide.redroom{background:radial-gradient(ellipse 90% 80% at 50% 110%,rgba(160,24,52,.6),rgba(70,12,26,.42) 48%,rgba(28,8,13,.3) 80%),#0d0709}
 .slide.redroom .fire.red b{opacity:1}
-.automerge{margin-top:34px;border-left:2px solid rgba(69,214,127,.5);padding:2px 0 2px 20px}
-.automerge .am-h{margin:0 0 12px;font-size:17px;line-height:1.5;color:var(--fg)}
-.automerge .am-tag{font-size:12.5px;color:var(--green);border:1px solid rgba(69,214,127,.32);background:rgba(69,214,127,.07);
-  padding:3px 8px;border-radius:3px;margin-right:8px;vertical-align:1px}
-.automerge ol{margin:0;padding-left:22px;font-size:16.5px;line-height:1.6;font-weight:300;color:var(--dim)}
+.automerge{align-self:stretch;display:flex;flex-direction:column;justify-content:center}
+.automerge .am-h{margin:0 0 22px;font-size:20px;line-height:1.55;color:var(--fg)}
+.automerge .am-tag{display:inline-block;font-size:13px;color:var(--green);border:1px solid rgba(69,214,127,.32);background:rgba(69,214,127,.07);
+  padding:3px 9px;border-radius:3px;margin-bottom:12px}
+.automerge .am-w{margin:0 0 10px;font-size:15px;color:var(--mute);letter-spacing:.02em}
+.automerge ol{margin:0;padding-left:24px;font-size:18px;line-height:1.6;font-weight:300;color:var(--dim)}
+.automerge li{margin-bottom:10px}
 .automerge li::marker{color:var(--green)}
+.slide.redroom .topbar{border-bottom-color:rgba(255,77,109,.3)}
+.slide.redroom .topbar .pr{color:#ff4d6d}
+.slide.redroom .topbar .fl{color:#ffb8c4}
+.slide.redroom h1.t{color:#fff;font-weight:600}
+.slide.redroom h1.t .h{color:#ff4d6d;opacity:1;text-shadow:0 0 18px rgba(255,77,109,.55)}
+.slide.redroom .statusbar{background:rgba(36,7,13,.9);border-top-color:rgba(255,77,109,.3);color:#d18f9b}
+.slide.redroom .statusbar i{background:#ff4d6d;opacity:1;height:2px;top:-2px;box-shadow:0 0 12px rgba(255,77,109,.8)}
+.slide.redroom .statusbar b{color:#ffd0d8}
+.slide.redroom .statusbar em{color:#8f4b58}
+.slide.redroom .metal{color:#ff8fa3;font-weight:500;letter-spacing:.04em;text-shadow:0 0 14px rgba(255,77,109,.45)}
+body.red-on #ui button{background:#24070d;border-color:rgba(255,77,109,.35);color:#ff9fb0}
+body.red-on #ui button:hover{background:#3a0b16;color:#fff}
+body.red-on #ui #count{color:#ff9fb0}
 .prb .p1{font-size:34px;line-height:1.4;font-weight:300;color:var(--dim);margin:0 0 14px}
 .prb .p2{font-size:40px;line-height:1.35;font-weight:500;color:var(--fg);margin:30px 0 0;letter-spacing:-.01em}
 .prb .p2 b{color:var(--rose);font-weight:600}
@@ -1012,23 +1027,23 @@ body.grid .slide.on{box-shadow:0 0 0 2px var(--green)}
           <p class="rp">skills-hub/</p>
           <p class="rd">canonical skill definitions</p>
         </div>
-      </div>
-      <div class="tech">
-        <p class="sh cy" style="display:flex;align-items:center;gap:10px">Technical
+        <div class="tech">
+        <p class="sh cy" style="display:flex;align-items:center;gap:10px;margin-top:30px">Technical
           <span style="margin-left:auto"><span style="font-size:10.5px;font-weight:400;letter-spacing:.04em;text-transform:none;color:var(--cyan);border:1px solid rgba(82,199,255,.32);background:rgba(82,199,255,.07);padding:3px 8px;border-radius:3px;white-space:nowrap">@ot-harmony-ai-masters</span></span></p>
         <div class="ritem">
           <p class="rp">governance/</p>
           <p class="rd">operating, artifact, quality, and skill contracts</p>
         </div>
+        </div>
       </div>
-    </div>
-
-    <div class="automerge">
-      <p class="am-h"><span class="am-tag">@auto-approve</span> Knowledge changes merge automatically &mdash; no reviewer needed. Two reasons:</p>
-      <ol>
-        <li>People forget to review PRs.</li>
-        <li>Partial or somewhat wrong information is always better than no information at all.</li>
-      </ol>
+      <div class="automerge">
+        <p class="am-h"><span class="am-tag">@auto-approve</span><br>Knowledge changes merge automatically &mdash; no reviewer needed.</p>
+        <p class="am-w">Two reasons:</p>
+        <ol>
+          <li>People forget to review PRs.</li>
+          <li>Partial or somewhat wrong information is always better than no information at all.</li>
+        </ol>
+      </div>
     </div>
   </div>
 </section>
@@ -1161,7 +1176,7 @@ change-log.json
       <g><title>WhatsApp</title><circle cx="324.8" cy="417.7" r="34" fill="#140a0d" stroke="rgba(255,109,133,.45)" stroke-width="2"/><svg x="304.4" y="397.3" width="40.8" height="40.8" viewBox="0 0 256 258"><defs><linearGradient id="SVGK3KZq49U" x1="50%" x2="50%" y1="100%" y2="0%"><stop offset="0%" stop-color="#1faf38"/><stop offset="100%" stop-color="#60d669"/></linearGradient><linearGradient id="SVGefMkoEOd" x1="50%" x2="50%" y1="100%" y2="0%"><stop offset="0%" stop-color="#f9f9f9"/><stop offset="100%" stop-color="#fff"/></linearGradient></defs><path fill="url(#SVGK3KZq49U)" d="M5.463 127.456c-.006 21.677 5.658 42.843 16.428 61.499L4.433 252.697l65.232-17.104a123 123 0 0 0 58.8 14.97h.054c67.815 0 123.018-55.183 123.047-123.01c.013-32.867-12.775-63.773-36.009-87.025c-23.23-23.25-54.125-36.061-87.043-36.076c-67.823 0-123.022 55.18-123.05 123.004"/><path fill="url(#SVGefMkoEOd)" d="M1.07 127.416c-.007 22.457 5.86 44.38 17.014 63.704L0 257.147l67.571-17.717c18.618 10.151 39.58 15.503 60.91 15.511h.055c70.248 0 127.434-57.168 127.464-127.423c.012-34.048-13.236-66.065-37.3-90.15C194.633 13.286 162.633.014 128.536 0C58.276 0 1.099 57.16 1.071 127.416m40.24 60.376l-2.523-4.005c-10.606-16.864-16.204-36.352-16.196-56.363C22.614 69.029 70.138 21.52 128.576 21.52c28.3.012 54.896 11.044 74.9 31.06c20.003 20.018 31.01 46.628 31.003 74.93c-.026 58.395-47.551 105.91-105.943 105.91h-.042c-19.013-.01-37.66-5.116-53.922-14.765l-3.87-2.295l-40.098 10.513z"/><path fill="#fff" d="M96.678 74.148c-2.386-5.303-4.897-5.41-7.166-5.503c-1.858-.08-3.982-.074-6.104-.074c-2.124 0-5.575.799-8.492 3.984c-2.92 3.188-11.148 10.892-11.148 26.561s11.413 30.813 13.004 32.94c1.593 2.123 22.033 35.307 54.405 48.073c26.904 10.609 32.379 8.499 38.218 7.967c5.84-.53 18.844-7.702 21.497-15.139c2.655-7.436 2.655-13.81 1.859-15.142c-.796-1.327-2.92-2.124-6.105-3.716s-18.844-9.298-21.763-10.361c-2.92-1.062-5.043-1.592-7.167 1.597c-2.124 3.184-8.223 10.356-10.082 12.48c-1.857 2.129-3.716 2.394-6.9.801c-3.187-1.598-13.444-4.957-25.613-15.806c-9.468-8.442-15.86-18.867-17.718-22.056c-1.858-3.184-.199-4.91 1.398-6.497c1.431-1.427 3.186-3.719 4.78-5.578c1.588-1.86 2.118-3.187 3.18-5.311c1.063-2.126.531-3.986-.264-5.579c-.798-1.593-6.987-17.343-9.819-23.64"/></svg></g>
     </svg>
   </div>
-  <p style="position:relative;z-index:1;margin:14px 0 0;font-size:17px;color:var(--dim)">&#9834; heavy metal plays at background</p>
+  <p class="metal" style="position:relative;z-index:1;margin:14px 0 0;font-size:17px">&#9834; heavy metal plays at background</p>
 </section>
 
 <!-- documentation standards: worked example -->
@@ -1913,6 +1928,7 @@ function show(n){
   history.replaceState(null, '', '#' + (i + 1));
   if (window.__cover) window.__cover(i === 0 && !document.body.classList.contains('grid'));
   if (window.__demo) window.__demo(i);
+  document.body.classList.toggle('red-on', slides[i].classList.contains('redroom') && !document.body.classList.contains('grid'));
 }
 function toggleGrid(){ document.body.classList.toggle('grid'); fit(); show(i); }
 addEventListener('keydown', e => {
